@@ -1,0 +1,42 @@
+{
+  "name": "ecommerce_api",
+  "version": "1.0.0",
+  "description": "E-Commerce platform with cart and payment gateway integration.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "lint": "eslint.",
+    "precommit": "lint-staged",
+    "prepush": "npm run lint",
+    "postpush": "git update-index --assume-unchanged.env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngdkhuong/ecommerce_api.git"
+  },
+  "keywords": [
+    "Programming",
+    "Language",
+    "Database",
+    "Payment",
+    "Gateway",
+    "Inventory",
+    "Management"
+  ],
+  "author": "ngdkhuong (kuondev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngdkhuong/ecommerce_api/issues"
+  },
+  "homepage": "https://github.com/ngdkhuong/ecommerce_api#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.3",
+    "nodemon": "^3.1.9"
+  }
+}
