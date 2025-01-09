@@ -5,11 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "lint": "eslint.",
-    "precommit": "lint-staged",
-    "prepush": "npm run lint",
-    "postpush": "git update-index --assume-unchanged.env",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -38,5 +34,15 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.3",
     "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }
